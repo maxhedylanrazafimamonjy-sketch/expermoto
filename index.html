@@ -6,12 +6,20 @@
   <title>ExpertMoto — Apprends. Entretiens. Répare.</title>
   <meta name="description" content="ExpertMoto : apprends la mécanique des motos thermiques, pas à pas.">
   <meta name="theme-color" content="#0D0D0D">
+
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="ExpertMoto">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="hero">
     <div class="brand">
       <span class="brand-mark" aria-hidden="true">EM</span>
@@ -21,6 +29,7 @@
     <h1>Apprends. <span>Entretiens.</span> Répare.</h1>
     <p class="lead">Des cours clairs, des fiches d’entretien et des quiz pour progresser pas à pas, même avec une connexion lente.</p>
   </header>
+
   <main>
     <section class="pillars" aria-label="Les trois piliers d’ExpertMoto">
       <article class="pillar">
@@ -39,25 +48,30 @@
         <p>Pannes et quiz</p>
       </article>
     </section>
-<section class="card" aria-labelledby="diag-title">
-  <p class="tag">Étape 0</p>
-  <h2 id="diag-title">Contrôle technique</h2>
-  <p class="muted">Cette page vérifie qu’ExpertMoto fonctionne correctement sur votre téléphone.</p>
-  <ul class="checks">
-    <li><span>Version</span><span class="pill" id="chk-version" data-state="info">En attente</span></li>
-    <li><span>Connexion sécurisée (HTTPS)</span><span class="pill" id="chk-https" data-state="wait">En attente</span></li>
-    <li><span>Réseau</span><span class="pill" id="chk-network" data-state="wait">En attente</span></li>
-    <li><span>Service worker</span><span class="pill" id="chk-sw" data-state="wait">En attente</span></li>
-    <li><span>Fichiers hors ligne</span><span class="pill" id="chk-cache" data-state="wait">En attente</span></li>
-    <li><span>Mode d’affichage</span><span class="pill" id="chk-mode" data-state="wait">En attente</span></li>
-  </ul>
-  <button class="btn" id="btn-reset" type="button">Vider le cache et recharger</button>
-  <p class="hint" id="reset-msg" role="status"></p>
-</section>
+
+    <section class="card" aria-labelledby="diag-title">
+      <p class="tag">Étape 0</p>
+      <h2 id="diag-title">Contrôle technique</h2>
+      <p class="muted">Cette page vérifie qu’ExpertMoto fonctionne correctement sur votre téléphone.</p>
+
+      <ul class="checks">
+        <li><span>Version</span><span class="pill" id="chk-version" data-state="info">En attente</span></li>
+        <li><span>Connexion sécurisée (HTTPS)</span><span class="pill" id="chk-https" data-state="wait">En attente</span></li>
+        <li><span>Réseau</span><span class="pill" id="chk-network" data-state="wait">En attente</span></li>
+        <li><span>Service worker</span><span class="pill" id="chk-sw" data-state="wait">En attente</span></li>
+        <li><span>Fichiers hors ligne</span><span class="pill" id="chk-cache" data-state="wait">En attente</span></li>
+        <li><span>Mode d’affichage</span><span class="pill" id="chk-mode" data-state="wait">En attente</span></li>
+      </ul>
+
+      <button class="btn" id="btn-reset" type="button">Vider le cache et recharger</button>
+      <p class="hint" id="reset-msg" role="status"></p>
+    </section>
   </main>
+
   <footer class="footer">
     <p>ExpertMoto · version de test <span id="footer-version">0.0.1</span></p>
   </footer>
+
   <script src="js/app.js" defer></script>
 </body>
 </html>
